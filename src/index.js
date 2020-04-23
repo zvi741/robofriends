@@ -9,7 +9,9 @@ import App from './containers/App'
 import * as serviceWorker from './serviceWorker';
 import { searchRobots } from './reducers'
 import 'tachyons'
+import { ConsoleWriter } from 'istanbul-lib-report';
 
+console.log('hi')
 const logger = createLogger()
 const store = createStore(searchRobots, applyMiddleware(thunkMiddlewareS, logger))
 
