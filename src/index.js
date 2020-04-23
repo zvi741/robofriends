@@ -11,7 +11,7 @@ import { searchRobots } from './reducers'
 import 'tachyons'
 import { ConsoleWriter } from 'istanbul-lib-report';
 
-console.log('hi')
+console.log('hi2')
 const logger = createLogger()
 const store = createStore(searchRobots, applyMiddleware(thunkMiddlewareS, logger))
 
